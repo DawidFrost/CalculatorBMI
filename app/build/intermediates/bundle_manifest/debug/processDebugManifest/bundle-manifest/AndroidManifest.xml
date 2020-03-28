@@ -8,6 +8,9 @@
         android:minSdkVersion="29"
         android:targetSdkVersion="29" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -17,7 +20,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity android:name="com.example.calculatorbmi.CoronaDashboardsActivity" />
+        <activity android:name="com.example.calculatorbmi.CoronaQuizResultActivity" />
+        <activity android:name="com.example.calculatorbmi.CoronaQuizActivity" />
         <activity android:name="com.example.calculatorbmi.CoronaRecipActivity" />
         <activity android:name="com.example.calculatorbmi.PPMActivity" />
         <activity android:name="com.example.calculatorbmi.HomeActivity" >

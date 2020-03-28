@@ -1034,7 +1034,9 @@ id CTRL
 id FUNCTION
 id GoBMI
 id GoCorona
+id GoDashboard
 id GoPPM
+id GoQuiz
 id META
 id SHIFT
 id SYM
@@ -1064,6 +1066,7 @@ id age
 id alertTitle
 id all
 id always
+id answersgrp
 id async
 id auto
 id barrier
@@ -1071,7 +1074,10 @@ id beginning
 id blocking
 id bmi
 id bottom
+id btnRestart
+id button3
 id buttonPanel
+id buttonquit
 id calculate
 id calculatePPM
 id cancel_action
@@ -1148,6 +1154,7 @@ id mtrl_internal_children_alpha_tag
 id multiply
 id navigation_header_container
 id never
+id nextbutton
 id none
 id normal
 id notification_background
@@ -1165,6 +1172,10 @@ id ppmView
 id progress_circular
 id progress_horizontal
 id radio
+id radioButton
+id radioButton2
+id radioButton3
+id radioButton4
 id right
 id right_icon
 id right_side
@@ -1253,12 +1264,17 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tvque
+id tvres
+id tvres2
+id tvres3
 id uniform
 id unlabeled
 id up
 id useLogo
 id view_offset_helper
 id visible
+id webview
 id weight
 id withText
 id wrap
@@ -1310,6 +1326,9 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_corona_dashboards
+layout activity_corona_quiz
+layout activity_corona_quiz_result
 layout activity_corona_recip
 layout activity_home
 layout activity_main

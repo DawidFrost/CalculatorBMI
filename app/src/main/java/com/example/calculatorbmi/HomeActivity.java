@@ -20,6 +20,8 @@ public class HomeActivity extends AppCompatActivity {
         Button buttonBMI=(Button) findViewById(R.id.GoBMI);
         Button buttonPPM=(Button) findViewById(R.id.GoPPM);
         Button buttonCorona=(Button) findViewById(R.id.GoCorona);
+        Button buttonQuiz=(Button) findViewById(R.id.GoQuiz);
+        Button buttonDashboards=(Button) findViewById(R.id.GoDashboard);
 
         // Add listener
         buttonBMI.setOnClickListener(
@@ -43,6 +45,20 @@ public class HomeActivity extends AppCompatActivity {
                         openCoronaRecip();
                     }
                 });
+        buttonQuiz.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        openCoronaQuiz();
+                    }
+                });
+        buttonDashboards.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        openCoronaDashboard();
+                    }
+                });
 
     }
         public void openCalculatorBMI(){
@@ -55,6 +71,14 @@ public class HomeActivity extends AppCompatActivity {
         }
     public void openCoronaRecip(){
         Intent intent = new Intent(this,CoronaRecipActivity.class);
+        startActivity(intent);
+    }
+    public void openCoronaQuiz(){
+        Intent intent = new Intent(this,CoronaQuizActivity.class);
+        startActivity(intent);
+    }
+    public void openCoronaDashboard(){
+        Intent intent = new Intent(this,CoronaDashboardsActivity.class);
         startActivity(intent);
     }
 
