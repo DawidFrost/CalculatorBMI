@@ -16,33 +16,39 @@ public class CoronaDashboardsActivity extends AppCompatActivity {
     String dashboard[] = {
             "<html>\n" +
                     "  <head>\n" +
-                    "   <center><h4>CORONAVIRUS PANDEMIC - March 28, 2020</h4></center>"+
                     "    <script type=\"text/javascript\" src=\"https://www.gstatic.com/charts/loader.js\"></script>\n" +
                     "    <script type=\"text/javascript\">\n" +
-                    "      google.charts.load(\"current\", {packages:[\"corechart\"]});\n" +
+                    "      google.charts.load('current', {'packages':['bar']});\n" +
                     "      google.charts.setOnLoadCallback(drawChart);\n" +
+                    "\n" +
                     "      function drawChart() {\n" +
                     "        var data = google.visualization.arrayToDataTable([\n" +
-                    "          ['Total', 'People for the Day'],\n" +
-                    "          ['Total cases',     104256],\n" +
-                    "          ['Total deaths',      1704],\n" +
-                    "          ['Total recovered',  2525],\n" +
+                    "          ['Country', 'Confirmed', 'Recovered', 'Deaths'],\n" +
+                    "          ['Italy', 86498, 10950, 9134],\n" +
+                    "          ['China', 81997, 75100, 3300],\n" +
+                    "          ['Poland',1481 , 7, 17],\n" +
+                    "          ['USA', 105470, 895, 1710]\n" +
+
+
                     "        ]);\n" +
                     "\n" +
                     "        var options = {\n" +
-                    "          title: 'USA - March 28, 2020',\n" +
-                    "          legend: 'bottom'\n"+
+                    "          chart: {\n" +
+                    "            title: 'COVID by Country',\n" +
+                    "            subtitle: 'Confirmed, Recovered, Deaths - date 28.03.2020',\n" +
+                    "          }\n" +
                     "        };\n" +
                     "\n" +
-                    "        var chart = new google.visualization.PieChart(document.getElementById('piechart'));\n" +
-                    "        chart.draw(data, options);\n" +
+                    "        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));\n" +
+                    "\n" +
+                    "        chart.draw(data, google.charts.Bar.convertOptions(options));\n" +
                     "      }\n" +
                     "    </script>\n" +
                     "  </head>\n" +
                     "  <body>\n" +
-                    "   <div id=\"piechart\" style=\"width: 400px; height: 450px;\"></div>\n" +
+                    "    <div id=\"columnchart_material\" style=\"width: 800px; height: 500px;\"></div>\n" +
                     "  </body>\n" +
-                    "</html>",
+                    "</html>\n",
                     "<html>\n" +
                     "  <head>\n" +
                     "   <center><h4>CORONAVIRUS PANDEMIC - March 28, 2020</h4></center>"+
@@ -53,9 +59,9 @@ public class CoronaDashboardsActivity extends AppCompatActivity {
                     "      function drawChart() {\n" +
                     "        var data = google.visualization.arrayToDataTable([\n" +
                     "          ['Total', 'People for the Day'],\n" +
-                    "          ['Total cases',     86498],\n" +
-                    "          ['Total deaths',      9134],\n" +
-                    "          ['Total recovered',  10950],\n" +
+                    "          ['Confirmed',     86498],\n" +
+                    "          ['Deaths',      9134],\n" +
+                    "          ['Recovered',  10950],\n" +
                     "        ]);\n" +
                     "\n" +
                     "        var options = {\n" +
@@ -82,9 +88,9 @@ public class CoronaDashboardsActivity extends AppCompatActivity {
                     "      function drawChart() {\n" +
                     "        var data = google.visualization.arrayToDataTable([\n" +
                     "          ['Total', 'People for the Day'],\n" +
-                    "          ['Total cases',     81394],\n" +
-                    "          ['Total deaths',      3295],\n" +
-                    "          ['Total recovered',  74971],\n" +
+                    "          ['Confirmed',     81394],\n" +
+                    "          ['Deaths',      3295],\n" +
+                    "          ['Recovered',  74971],\n" +
                     "        ]);\n" +
                     "\n" +
                     "        var options = {\n" +
@@ -111,13 +117,13 @@ public class CoronaDashboardsActivity extends AppCompatActivity {
                     "      function drawChart() {\n" +
                     "        var data = google.visualization.arrayToDataTable([\n" +
                     "          ['Total', 'People for the Day'],\n" +
-                    "          ['Total cases',     72248],\n" +
-                    "          ['Total deaths',      5690],\n" +
-                    "          ['Total recovered',  12285],\n" +
+                    "          ['Confirmed',     1481],\n" +
+                    "          ['Total deaths',      7],\n" +
+                    "          ['Total recovered',  17],\n" +
                     "        ]);\n" +
                     "\n" +
                     "        var options = {\n" +
-                    "          title: 'Spain - March 28, 2020',\n" +
+                    "          title: 'Poland - March 28, 2020',\n" +
                     "          legend: 'bottom'\n"+
                     "        };\n" +
                     "\n" +
@@ -140,13 +146,13 @@ public class CoronaDashboardsActivity extends AppCompatActivity {
                     "      function drawChart() {\n" +
                     "        var data = google.visualization.arrayToDataTable([\n" +
                     "          ['Total', 'People for the Day'],\n" +
-                    "          ['Total cases',     53340],\n" +
-                    "          ['Total deaths',      395],\n" +
-                    "          ['Total recovered',  6658],\n" +
+                    "          ['Total cases',     105470],\n" +
+                    "          ['Total deaths',      1710],\n" +
+                    "          ['Total recovered',  895],\n" +
                     "        ]);\n" +
                     "\n" +
                     "        var options = {\n" +
-                    "          title: 'Germany - March 28, 2020',\n" +
+                    "          title: 'USA - March 28, 2020',\n" +
                     "          legend: 'bottom'\n"+
                     "        };\n" +
                     "\n" +
