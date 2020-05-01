@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PpmActivity">
+
+    <TextView
+        android:id="@+id/PpmView"
+        android:layout_width="364dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/PPM"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/PpmAge"
+        android:layout_width="320dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/EnterAge"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PpmView" />
+
+    <EditText
+        android:id="@+id/PpmHeight"
+        android:layout_width="320dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/EnterHeight"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PpmAge" />
+
+    <EditText
+        android:id="@+id/PpmWeight"
+        android:layout_width="320dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/EnterWeight"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PpmHeight" />
+
+    <Switch
+        android:id="@+id/PpmSex"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:showText="true"
+        android:text="@string/PpmSwitchSex"
+        android:textOff="@string/PpmSwitchMan"
+        android:textOn="@string/PpmSwitchWoman"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PpmWeight" />
+
+    <Button
+        android:id="@+id/CalculatePPM"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/PpmCalculate"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PpmSex"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

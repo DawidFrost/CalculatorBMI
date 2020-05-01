@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FitAndCoronaApp</string>
+    <string name="BMICalc">BMI CALCULATOR</string>
+    <string name="PPMCalc">PPM CALCULATOR</string>
+    <string name="Corona">Corona Dashboard</string>
+    <string name="EnterWeight">Enter Weight</string>
+    <string name="EnterHeight">Enter Height</string>
+    <string name="EnterAge">Enter Age</string>
+    <string name="CalculateBMI">Calculate BMI</string>
+    <string name="ReturnBMI">BMI</string>
+    <string name="PpmSwitchSex">SEX</string>
+    <string name="PpmSwitchMan">MAN</string>
+    <string name="PpmSwitchWoman">WOMAN</string>
+    <string name="PpmCalculate">CALCULATE PPM</string>
+    <string name="PPM">PPM</string>
+
+
+</resources>
